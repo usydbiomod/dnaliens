@@ -1,0 +1,56 @@
+body {
+	color: #A8FF85;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	background-color: #000000;
+}
+
+.contact {
+	color: #A8FF85;
+	display: block;
+	width: 100%;
+	position: static;
+	z-index: 2;
+	text-align: center;
+	bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+.contact .icons {
+	margin-bottom: 0.625rem;
+	padding: 0;
+	text-align: center;
+	list-style: none;
+	list-style-type: none;
+}
+
+
+.contact .icons li {
+	display: inline-block;
+	margin-right: 0.625rem;
+}
+
+.contact .icons li:last-of-type { margin-right: 0px; }
+
+.contact .icons li a {
+	display: block;
+	width: 1.9rem;
+	height: 1.9rem;
+	opacity: .5;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	color: black;
+	font-size: 1.9rem;
+}
+
+
+.contact .icons li a:hover {
+	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}

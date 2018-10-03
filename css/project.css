@@ -1,0 +1,144 @@
+/* A link pseduo class: to make a element under special condition */
+/* Make the visited and link state the same */
+/* This is the initial state */
+
+
+div .text{
+	position: relative;
+	margin: 3rem 10vw;
+	padding: 1rem 2vw;
+	color: #ffffff;
+	background-color: rgba(255, 255,255,0.25);
+}
+
+div .text h1 {
+	text-transform: uppercase;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #A8FF85;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+div .tridmod{
+	position: absolute;
+	/* going up -> netagtive value */
+    margin-top: -8rem;
+    margin-left: 45vw;
+
+    z-index: 1;
+}
+
+
+div .judgingbtn {
+	align-content: center;
+	margin: 2rem 19vw;
+}
+
+.btn {
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    /* change the default style - to none*/
+    text-decoration: none;
+    /* make the padding */
+    padding: 1.3rem 1.5rem;
+    /* Change the element to inline-block */
+    display: inline-block;
+    /* Make round edges -> can use a high value */
+    border-radius: 5rem;
+    /* All property will be enabled to make animation */
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.0rem;
+}
+
+/* Make hover effect on the buttons */
+.btn:hover{
+    /* going up -> netagtive value */
+    transform: translateY(-0.3rem);
+    /* Adding the box-shadow - X Y blur color: rgba(x,x,x,transparency)*/
+    box-shadow: 0 1rem 2rem rgba(169,255,133,0.2);
+    color: #000000;
+}
+
+/* active pseudo class */
+.btn:active{
+    /* relate to the initial state */
+    transform: translateY(-0.1rem);
+    /* Adding the box-shadow - X Y blur color*/
+    box-shadow: 0 0.5rem 1rem rgba(169,255,133,0.2);
+}
+
+.btn--white{
+    background-color: #A8FF85;
+    color: #000000;
+}
+
+/* Add an element that looks exactly like the one in the front
+but hidden behind it */
+.btn::after{
+    /* Specify the content property -> to make display */
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    /* Make it to the back */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* define the position z controls the position that hiddens from another element */
+    z-index: -1;
+    /* Make the animation in the initial state which is here */
+    transition: all 0.4s;
+}
+
+.btn--white::after{
+	color: #000000;
+    background-color: rgba(169,255,133,1);
+}
+
+/* Make the bigger hover behind effect */
+.btn:hover::after{
+    /* scale the effect for 2 times */
+    transform: scaleX(1.4) scaleY(1.6);
+    /* Make it invisible */
+    opacity: 0;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        /* Controls the position of the animation starting point */
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn--animated{
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    /* Make the style of the animation from the beginning */
+    animation-fill-mode: backwards;
+}
+
+div .video {
+	margin: 1rem 30vw;
+}
+
+
