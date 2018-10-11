@@ -8,46 +8,49 @@ body {
 	color: #A8FF85;
 	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
 	background-image: url(../images/background/astronautbckg.png);
 	/*height: 380px;*/ /* You must set a specified height */
-  	background-position: cover; /* Center the image */
-  	background-repeat: no-repeat; /* Do not repeat the image */
+	height: 100%; 
+  	background-position: center; /* Center the image */
+  	background-repeat: repeat; /* Do not repeat the image */
+  	background-size: cover;
 }
 
 
 
 .bacterialPlanet #pic{
 	position: relative;
-	max-width:33%;
-	max-height:33%;
-	margin-top: 6rem;
-	margin-left: 2rem;
+	max-width:30vw;
+	max-height:30vw;
+	margin-top: 6vw;
+	margin-left: 2vw;
 }
 
 .DNAUFO #pic{
 	position: absolute;
-	max-width:25%;
-	max-height:25%;
-	margin-top: 2rem;
-	margin-left: 30rem;
+	max-width:15vw;
+	max-height:15vw;
+	margin-top: 2vw;
+	margin-left: 30vw;
 }
 
 .astraunaut #pic{
 	position: absolute;
-	max-width:30%;
-	max-height:30%;
-	margin-top: 26rem;
-	margin-left: 78rem;
+	max-width:12vw;
+	max-height:12vw;
+	margin-top: 24vw;
+	margin-left: 83vw;
 }
 
 .HomeIntro{
 	font-family: 'Exo 2', sans-serif;
 	color: #fff;
 	position: absolute;
-	max-width: 45%;
-	margin-top: 17.5rem;
-	margin-left: 36rem;
-	font-size: 1.4rem;
+	max-width: 45vw;
+	margin-top: 17.5vw;
+	margin-left: 36vw;
+	font-size: 1.4vw;
 }
 
 
