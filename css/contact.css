@@ -94,3 +94,11 @@ figcaption {
     padding: 3px;
     text-align: center;
 }
+
+.imgcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+}
