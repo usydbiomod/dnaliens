@@ -8,7 +8,7 @@ body {
 	height: 100%; 
   	background-position: center; /* Center the image */
   	background-repeat: repeat; /* Do not repeat the image */
-  	background-size: cover;
+  	background-size: contain;
 }
 
 .contact {
