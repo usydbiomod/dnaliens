@@ -18,6 +18,9 @@ body {
 }
 
 
+.top {
+	margin-left: 22vw;
+}
 
 .bacterialPlanet #pic{
 	position: relative;
@@ -35,13 +38,6 @@ body {
 	margin-left: 30vw;
 }
 
-.astraunaut #pic{
-	position: absolute;
-	max-width:12vw;
-	max-height:12vw;
-	margin-top: 24vw;
-	margin-left: 83vw;
-}
 
 .HomeIntro{
 	font-family: 'Exo 2', sans-serif;
@@ -76,3 +72,100 @@ opacity: 0.7;
 filter: alpha(opacity=70); 
 }
 */
+.btn {
+	display: block; 
+	margin-left: 39vw;
+	margin-right: auto;
+	margin-bottom: 1vw;
+	margin-top: 2vw;
+	width: 15vw;
+}
+
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    /* make the padding */
+
+    /* Change the element to inline-block */
+    display: inline-block;
+    /* Make round edges -> can use a high value */
+    /* All property will be enabled to make animation */
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.0rem;
+    background-color: transparent;
+}
+
+/* Make hover effect on the buttons */
+.btn:hover{
+    /* going up -> netagtive value */
+    transform: translateY(-0.5vw);
+    /* Adding the box-shadow - X Y blur color: rgba(x,x,x,transparency)*/
+    box-shadow: 6rem 3rem 6rem rgb(168, 255, 133,0.8);
+    color: transparent;
+}
+
+/* active pseudo class */
+.btn:active{
+    /* relate to the initial state */
+    transform: translateY(-0.1rem);
+    /* Adding the box-shadow - X Y blur color*/
+    box-shadow: 0.5rem 0.5rem 1rem rgb(168, 255, 133,0.8);
+}
+
+.btn--white{
+    background-color: transparent;
+    color:  transparent;
+}
+
+/* Add an element that looks exactly like the one in the front
+but hidden behind it */
+.btn::after{
+    /* Specify the content property -> to make display */
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    /* Make it to the back */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* define the position z controls the position that hiddens from another element */
+    z-index: -1;
+    /* Make the animation in the initial state which is here */
+    transition: all 0.4s;
+}
+
+.btn--white::after{
+	color: rgb(168, 255, 133,0.2);
+    background-color: transparent;
+}
+
+/* Make the bigger hover behind effect */
+.btn:hover::after{
+    /* scale the effect for 2 times */
+    transform: scaleX(1.4) scaleY(1.6);
+    /* Make it invisible */
+    opacity: 0;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        /* Controls the position of the animation starting point */
+        transform: translateY(30rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn--animated{
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    /* Make the style of the animation from the beginning */
+    animation-fill-mode: backwards;
+}
+
