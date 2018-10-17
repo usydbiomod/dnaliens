@@ -101,3 +101,6 @@ but hidden behind it */
     animation-fill-mode: backwards;
 }
 
+a #download{
+    color: #000000;
+}
