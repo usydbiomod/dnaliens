@@ -127,3 +127,10 @@ div.sticky {
   top: 0;
   padding: 5px;
 }
+
+    ul .sub li{
+        list-style: none;
+    }
+    .up li{
+        list-style: none;
+    }
