@@ -183,3 +183,7 @@ padding: 0.2rem 0;
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+
+.dropdown:hover .dropdown-menu {
+   display: block;
+}
