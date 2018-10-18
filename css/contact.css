@@ -130,7 +130,7 @@ figcaption {
 }
 
 .sidenav {
-width: 10vw;
+width: 18vw;
 height: 100%;
 position: fixed;
 z-index: 1;
@@ -139,9 +139,6 @@ left: 0vw;
 background: rgba(000, 000,000,0.5);
 overflow-x: hidden;
 padding: 0.2rem 0;
-border-style: solid;
-border-color: #A8FF85;
-line-height: 0.8;
 }
 
 .sidenav a {
