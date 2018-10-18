@@ -19,7 +19,7 @@ body {
 
 
 .top {
-	margin-left: 22vw;
+	margin-left: -25rem;
 }
 
 .bacterialPlanet #pic{
@@ -27,7 +27,7 @@ body {
 	max-width:30vw;
 	max-height:30vw;
 	margin-top: 6vw;
-	margin-left: 2vw;
+	margin-left: 0vw;
 }
 
 .DNAUFO #pic{
