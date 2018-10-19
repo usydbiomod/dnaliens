@@ -117,8 +117,8 @@ figure {
     flex-flow: column;
     margin: auto;
     padding: 5px;
-    margin-bottom: 1vw;
-    margin-top: 1vw;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
 }
 
 figcaption {
