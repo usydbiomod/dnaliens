@@ -100,7 +100,7 @@ div .btn {
     /* going up -> netagtive value */
     transform: translateY(-0.5vw);
     /* Adding the box-shadow - X Y blur color: rgba(x,x,x,transparency)*/
-    box-shadow: 6rem 3rem 6rem rgb(168, 255, 133,0.8);
+    /*box-shadow: 6rem 3rem 6rem rgb(168, 255, 133,0.8);*/
     color: transparent;
 }
 
@@ -109,7 +109,7 @@ div .btn {
     /* relate to the initial state */
     transform: translateY(-0.1rem);
     /* Adding the box-shadow - X Y blur color*/
-    box-shadow: 0.5rem 0.5rem 1rem rgb(168, 255, 133,0.8);
+    /*box-shadow: 0.5rem 0.5rem 1rem rgb(168, 255, 133,0.8);*/
 }
 
 .btn--white{
@@ -136,7 +136,7 @@ but hidden behind it */
 }
 
 .btn--white::after{
-	color: rgb(168, 255, 133,0.2);
+	/*color: rgb(168, 255, 133,0.2);*/
     background-color: transparent;
 }
 
