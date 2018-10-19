@@ -196,12 +196,16 @@ padding: 0.2rem 0;
    display: block;
 }
 
-#navbarDropdownMenulink ul{
+#navbarDropdownMenuLink ul{
   list-style: none;
 
 }
 
-#navbarDropdownMenulink li{
+#navbarDropdownMenuLink li{
   list-style: none;
 
+}
+
+.dropdown:hover .dropdown-menu ul{
+   list-style: none;
 }
