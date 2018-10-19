@@ -3974,6 +3974,13 @@ input[type="button"].btn-block {
   margin-left: 0;
   padding: 0.5rem;
   border-radius: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar >li {
+ float: none;
+ display: inline-block;
 }
 
 .navbar > .container,
