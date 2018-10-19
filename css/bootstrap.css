@@ -3971,9 +3971,6 @@ input[type="button"].btn-block {
   align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-left: 0;
-  padding: 0.5rem;
-  border-radius: 200px;
   width: 100%;
   text-align: center;
 }
