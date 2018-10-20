@@ -175,12 +175,13 @@
 <!--   <div class="sidenav">
   <a href="#Origami">DNA Origami</a>
   <ul>
-    <a href="#o1"><li>Background</li></a>
-    <a href="#o2"><li>Aims</li></a>
-    <a href="#o3"><li>Methods</li></a>
-    <a href="#o4"><li>Results</li></a>
-    <a href="#o5"><li>Discussion</li></a>
-    <a href="#o6"><li>Conclusion</li></a>
+    <a href="#o1"><li>Summary</li></a>
+    <a href="#o2"><li>Background</li></a>
+    <a href="#o3"><li>Targeting</li></a>
+    <a href="#o4"><li>Switching</li></a>
+    <a href="#o5"><li>Destruction</li></a>
+    <a href="#o6"><li>Methods</li></a>
+    <a href="#o6"><li>Future Work</li></a>
   </ul>
   <a href="#TA">Transport Assay</a>
     <ul>
@@ -230,42 +231,362 @@
 
     <div class="text">
       <h1 id="DNADesign">DNA Design</h1>
+      <h2>Summary</h2>
+      <p>
+        Seeking to come up with an innovative, new solution to the problem of anti-microbial resistance we have designed the UFO using the promising technology of DNA Origami. Central to our approach is the principle of modular design, we wanted to make a design which would be flexible and versatile to target and destroy different types of bacteria. 
+        The device exists in 2 functional states: ‘Targeting’ and ‘Destruction’. In the targeting state the destruction device, which is a DNA nanopore, is prevented from being activated by enclosure in a protective barrel. Here it is held by a tether, a tiny single stranded DNA rope. Once the barrel has bound to its target, the DNA locks into position at the bottom of the barrel to penetrate the membrane. Punctures in the membrane will lead to disintegration of the cell, as inner contents flow out in a process known as lysis.
+        Design was primarily performed in caDNAno [1] using the p7308 scaffold, with additional tools such as NUPACK [2], Cando [3] and oxDNA [4] used for analysis. 
+        A long strand (called the scaffold) is cinched by multiple smaller strands (called the staples). The staples contain strings of complementary bases to different scaffold parts, allowing different parts of the scaffold to be pulled together. This allows many geometries and designs to be created.
+
+      </p>
+
+      <p>
+        The device exists in 2 functional states: ‘Targeting’ and ‘Destruction’. In the targeting state the destruction device, which is a DNA nanopore, is prevented from being activated by enclosure in a protective barrel. Here it is held by a tether, a tiny single stranded DNA rope. Once the barrel has bound to its target, the DNA locks into position at the bottom of the barrel to penetrate the membrane. Punctures in the membrane will lead to disintegration of the cell, as inner contents flow out in a process known as lysis.
+      </p>
+      
+      <p>
+        Design was primarily performed in caDNAno [1] using the p7308 scaffold, with additional tools such as NUPACK [2], Cando [3] and oxDNA [4] used for analysis. 
+      </p>
+
       <h2>Background</h2>
       <p>
-        
+        DNA is traditionally recognised as the self-replicating macromolecule found in living organisms, with the objective of determining what functions the cells perform. The development of DNA origami [1] refunctionalises these biochemicals as nanoscale building blocks for a wide range of structural applications. With a double helix radius of 1.2nm and the distance per nucleotide of 0.34nm DNA is an excellent choice for a building block on the nanoscale.
+        <INSERT CHARLOTTE VIDEO>
       </p>
+      
+      <p>
+        A long strand (called the scaffold) is cinched by multiple smaller strands (called the staples). The staples contain strings of complementary bases to different scaffold parts, allowing different parts of the scaffold to be pulled together. This allows many geometries and designs to be created.        
+      </p>
+      <figure style="width:32vw; min-width: 280px;">
+        <p>
+          <img src="/dnaliens/images/theory/DNAOrigami.png" style="width:28vw; min-width: 270px;" class="imgcenter">
+        </p>
+        <figcaption>
+          <b>Figure 1.1. DNA Origami utilises short staple strands to stick a long scaffold together        </figcaption>
+      </figure>
 
       <p>
-        
-      </p>
+        Double helices of DNA complete two full turns every 21 bases. This limits how frequently adjacent strands can “cross-over”. We can hold adjacent helices together at these cross-over points by taking the DNA strands through both helices.      
+      </p>     
+              
+      <figure style="width:32vw; min-width: 280px;">
+        <p>
+          <img src="/dnaliens/images/theory/Crossover.png" style="width:28vw; min-width: 270px;" class="imgcenter">
+        </p>
+        <figcaption>
+          <b>Figure 1.2. Cross-overs are used for stability      </figcaption>
+      </figure>
+      
+        <p>
+        Cross-overs are the basis for structural stability of nanostructures, so it must be ensured that we can have them at regular intervals. In order to create structures more complex than a few DNA helices, we need to choose a consistent framework for which to build off. There's no single right way to do this but some common frameworks for making structures are the square and hexagonal lattices.      </p>     
+              
+      <figure style="width:32vw; min-width: 280px;">
+        <p>
+          <img src="/dnaliens/images/theory/Crossover.png" style="width:28vw; min-width: 270px;" class="imgcenter">
+        </p>
+        <figcaption>
+          <b>Figure 1.3. There are different ways we can arrange helices when viewed from above.     </figcaption>
+      </figure>    
 
-      <h2>Aims</h2>
+        <p>
+       In a square lattice we can have cross-overs between helices every 21/4=5.25 base pairs, whereas hexagonal lattices can have cross-overs every 7 turns. This provides an advantage for the hexagonal lattice as we can have even spacing of our cross-overs.</p>     
+
+        <p>
+            An important concept in DNA origami is that of a toehold mediated strand displacement reaction. [3] Thermodynamics governs the behaviour of chemical reactions with systems favouring states that minimise total free energy. Complementary bases Hydrogen bond to each other, with longer strings of bases corresponding to lower free energy. </p>   
+              
+      <figure style="width:32vw; min-width: 280px;">
+        <p>
+          <img src="/dnaliens/images/theory/FreeEnergy.png" style="width:28vw; min-width: 270px;" class="imgcenter">
+        </p>
+        <figcaption>
+          <b>Figure 1.4. In equilbrium free energy is minimised     </figcaption>
+      </figure>  
+ 
+         <p>
+           We can utilise this idea to our advantage. Consider two helices connected by a staple which has an additional 10 bases of unbonded single stranded DNA. This string of extra bases is called a “toehold” or “sticky end”.  The reverse complement to the longer strand, when added can displace the shorter strand over time as thermal forces driven Brownian motion causes base Hydrogen bonds to break and form. 
+ </p>   
+              
+      <figure style="width:32vw; min-width: 280px;">
+        <p>
+          <img src="/dnaliens/images/theory/Stranddisplacement.png" style="width:28vw; min-width: 270px;" class="imgcenter">
+        </p>
+        <figcaption>
+          <b>Figure 1.5. Strand displacement allows us to switch structures between different states
+     </figcaption>
+      </figure>  
+         <p>
+The basics here can be extended to form complex 3-dimensional shapes. Our project uses this advancement in a unique way to tackle the growing antimicrobial resistance problem in bacteria. 
+ </p>   
+
+           
+      <h2>Targeting</h2>
+      
+    <figure style="width:32vw; min-width: 280px;">
+        <p>
+          <img src="/dnaliens/images/theory/TargetLabel.png" style="width:28vw; min-width: 270px;" class="imgcenter">
+        </p>
+        <figcaption>
+          <b>Figure 1.6. The DNAlien when searching for it's target
+     </figcaption>
+     
+      </figure>  
+         <p>
+Our destruction device, the nanopore, is not selective to different types of bacteria. This would leave us with a rogue lipid-membrane destroyer. In order to achieve selectivity we have enclosed the nanopore in a protective barrel. Enclosing drugs, or other devices in protective structures is not a new concept with various designs from DNA boxes previously tested [8]. Given the closed to cylindrical symmetry of the nanopore, a barrel seemed a suitable choice. 
+        </p>   
+ 
+         <p>
+The barrel chosen from the literature (DN2 from [9]) has height 30nm, outer diameter of 30nm and inner diameter of 18nm. The dimensions are suitable to enclose a nanopore of sufficient length to penetrate the membrane of gram-negative bacteria. 
+        </p>    
+ 
+          <p>
+We modified the barrel scaffold by adding a single stranded DNA cable (named the tether) linking points on opposite sides of the barrel at the central inner-helix. The corresponds to helix 26 if we consider a cross-section of the barrel. 
+        </p>  
+              
+      <figure style="width:32vw; min-width: 280px;">
+        <p>
+          <img src="/dnaliens/images/theory/BarrelTopAndSide.png" style="width:28vw; min-width: 270px;" class="imgcenter">
+        </p>
+        <figcaption>
+          <b>Figure 1.7. Cross-section of the barrel when viewed from side (left). Top view of tether, holding pore across barrel (right).
+     </figcaption>
+      </figure>  
+        
+          <p>
+By choosing an appropriate scaffold starting point we could re-use most of the staples from the existing scaffold design. For the final design relevant part of the p7308 scaffold is:
+        </p>  
+        <p>
+        CTTTAACTCCCTGCAAGCCTCAGCGACCGAATATATCGGTTATGCGTGGGCGATGGTTGT -<i>pore starts here</i>- TGTCATTGTCGGCGCAACTATCGGTATCAAGCTGTTTAAGAAATTCACCTCGAAAGCAAGCTGATAAACCGATACAATTAAAGGCTCCTTTTGGAGCCTTTTTTTTGGAGATTTTCAACGTGAAAAAATTATTATTCGCAATTCCTTTAGTTGTTCCTTTCTAT -<i>pore ends here</i>- TCTCACTCCGCTGAAACTGTTGAAAGTTGTTTAGCAAAATCCCATACAGAAAATTCATTT
+        </p>
+         <p>
+The same tether is a continuous strand of DNA and we use it for scaffold of the pore. Single stranded DNA is flexible and hence the nanopore would move along as if fixed in the centre of a rope governed by Brownian motion due to the thermal energy of the environment. This works to our advantage once the DNAlien is attached to a lipid membrane. However while the barrel is moving through the environment seeking its target we want the pore to remain fixed inside the barrel.
+        </p>
+
+         <p>
+To do this we used cinches which were staples that held the cable tighter. These cinches contain toeholds so by adding complementary strands we can release the cinches and allow the cable to extend. 
+        </p>
+    
+    <figure style="width:32vw; min-width: 280px;">
+        <p>
+          <img src="/dnaliens/images/theory/Cinches.png" style="width:28vw; min-width: 270px;" class="imgcenter">
+        </p>
+        <figcaption>
+          <b>Figure 1.8. Cinches (red) used in structure: By adding a complementary strand to the cinch the tether becomes free to extend.
+     </figcaption>
+      </figure> 
+    <p>
+        NUPACK was used to check cinches for secondary structures and verify the scaffold was correctly held together. Each cinch is 52 bases long, 21 for each part of the cable it pulls together and 10 bases for the toehold (shown in italics).
+    </p>
+           
+    <p>
+        Add table here.
+    </p>
+    <figure style="width:32vw; min-width: 280px;">
+        <p>
+          <img src="/dnaliens/images/theory/Nupack1.png" style="width:28vw; min-width: 270px;" class="imgcenter">
+        </p>
+        <figcaption>
+          <b>Figure 1.8. Cinches allow formation of stable equilibrium structures. Left shows cinch 1 and right shows cinch 2. In NUPack we added 1μL concentrations of the cinch strand, and one strand for each of the parts of the scaffold that we want to bring together. The result was 1μL of a complex containing all 3 initial strands
+     </figcaption>
+      </figure>     
+    <p>
+        The challenge of targeting specific types of cells is a difficult one. It has been successfully achieved in vivo in cancer and can also be performed with bacteria, our specific focus [Insert from literature - someone write something here I know nothing]. Aptamers which are molecules that bind to targets.
+    </p>
+
+    <p>
+        For in vitro testing of the UFO we replace aptamers with cholesterols. Due to their hydrophilicity, cholesterols will embed all lipid bilayers, as opposed to just specific ones controlled by aptamers. By keeping the outside handles on the UFO the same and adding the appropriate cholesterol or aptamer to the corresponding anti-handle we can target different bacteria. 
+    </p>
+    
+    <p>
+        In order to ensure ease of replaceability of targeting molecules, we use 21-base pair handles which are single stranded DNA sequences sticking off the barrel at 6 different points. These were added to the 5’ end of staples along helix 12, as cholesterol attachments can only be made on the 3’ end of the anti-handle (complement to handle) strand.
+    </p>
+ 
+     <figure style="width:32vw; min-width: 280px;">
+        <p>
+          <img src="/dnaliens/images/theory/OuterHandles.png" style="width:28vw; min-width: 270px;" class="imgcenter">
+        </p>
+        <figcaption>
+          <b>Figure 1.9. Attachment of aptamers or cholesterols to DNAlien is done using handles. Targeting molecule is added to the 3’ end of the complement to the handle.
+     </figcaption>
+      </figure>   
+
+    <p>
+In our design we used: insert table here
+    </p>
+
+
+      <h2>Switching</h2>
+    <figure style="width:32vw; min-width: 280px;">
+        <p>
+          <img src="/dnaliens/images/theory/OuterHandles.png" style="width:28vw; min-width: 270px;" class="imgcenter">
+        </p>
+        <figcaption>
+          <b>Figure 1.10. Adding complementary strands to the cinches unlocks the pore.
+     </figcaption>
+      </figure> 
       <p>
-        
+        Once the DNAlien has reached its target the time has come for the destruction mechanism to be released. Addition of complementary strands to cinches allow release and the pore which moves due to Brownian motion until it . We chose the cable length of 60 base pairs (~20-40nm when unpaired) either side of the pore such that the cable would align with the bottom of the barrel allowing the pore to enter to the lipid membrane of the bacteria.
       </p>
 
+    <figure style="width:32vw; min-width: 280px;">
+        <p>
+          <img src="/dnaliens/images/theory/CableDims.png" style="width:28vw; min-width: 270px;" class="imgcenter">
+        </p>
+        <figcaption>
+          <b>Figure 1.11. Key dimensions decided for the DNAlien in locked closed state (left) and locked open state (right).
+     </figcaption>
+      </figure> 
+
+      <p>
+        oxDNA was used to understand the motion of the cable in the unlocked state. INSERT MORE STUFF AND VIDEO
+      </p>
+
+      <h2>Destruction</h2>
+      
+          <figure style="width:32vw; min-width: 280px;">
+        <p>
+          <img src="/dnaliens/images/theory/181018_UFO_6HB_openlock.tif" style="width:28vw; min-width: 270px;" class="imgcenter">
+        </p>
+        <figcaption>
+          <b>Figure 1.12. Once bound to bacteria, pore is locked at edge of barrel using additional cinches.
+     </figcaption>
+      </figure> 
+      <p>
+        Having multiple short complementary sequences to different parts of the cable poses potential hybridisation issues. For such our design to effectively take the closed lock state then this must be thermodynamically favourable to locking states.
+      </p>
+      <p>
+Initially the solution to this was ensuring that the cinch strands were attached to the cable in segments of at least five bases longer than the sequence connecting the lock strands to the cable. We chose a length of 14 nucleotides hybridising the cable to the lock strand as this allowed the system to remain stable in the fixed lock state until the complementary strands to the cinches were added. To test this we considered the part of the scaffold to lock with two complementary strands (one of length 21), and varied length of secondary strength looking at mean free energy and equilibrium concentration of structures in NUPACK.
+      </p>
+      
+          <figure style="width:32vw; min-width: 280px;">
+        <p>
+          <img src="/dnaliens/images/theory/CabNuPack.png" style="width:28vw; min-width: 270px;" class="imgcenter">
+        </p>
+        <figcaption>
+          <b>Figure 1.13. Determining an optimum length for fixed lock strands in NUPACK. 1μM Cable sub-section (GAATATATCGGTTATGCGTGGGCGATGGTTGT) was added to solution with 1μM side of 21 nucleotide closed-lock cinch (CCATCGCCCACGCATAACCGA). We also added 1μM of the sub-section of cinch. Ideally cinch:cable complex (free energy of -32.83 kCal/mol) should have 1μM concentration in equilibrium corresponding to system fully in fixed lock state. 14 nt was found as optimum as for 13nt and 12nt the sub-sequence:cable complex equilibrium concentration began to dilute when removing full 21-nt cinch sequence.
+     </figcaption>
+      </figure> 
+      
+      <p>
+        We also tested an open locking using handles (for location see figure 14). In this configuration we would add additional cinches to hold the tether to the handles (see figure 16). Handles were chosen so that they were orthogonal to each other as well as outer handles to ensure that they held only the chosen load. 
+      </p>
+
+          <figure style="width:32vw; min-width: 280px;">
+        <p>
+          <img src="/dnaliens/images/theory/FixedvsLocked.png" style="width:28vw; min-width: 270px;" class="imgcenter">
+        </p>
+        <figcaption>
+          <b> Figure 1.14. Comparison between locking mechanisms to destruction state. To increase probability of pore locking in this position we put 3 locking locations for each side of the tether. Either through directly holding the cable (fixed lock or using an intermediate strand (closed lock).
+     </figcaption>
+      </figure>
+      
+      <p>
+        Both handles and fixed locking strands were added as extensions to the 3’ end of barrel staples. For the fixed-open locking strands between the 3’ end of barrel staples and 5’ end of complementary part a 5T spacer was used. Lengths were calculated to hold the pore at the bottom of barrel with degree of freedom to move 3nm vertically. Position distribution of the pore was analysed in oxDNA. The DNA from our final design is as follows: INSERT TABLE
+      </p>
+      
+      <p>
+        Both handles and fixed locking strands were added as extensions to the 3’ end of barrel staples. For the fixed-open locking strands between the 3’ end of barrel staples and 5’ end of complementary part a 5T spacer was used. Lengths were calculated to hold the pore at the bottom of barrel with degree of freedom to move 3nm vertically. Position distribution of the pore was analysed in oxDNA. The DNA from our final design is as follows: INSERT TABLE
+      </p>
+      
+      <p>
+        Nanopores have been a significant focus for DNA nanotechnology over the past few years with uses varying from controlling transporting nutrients in and out of cell, as well as use as synthetic flippase enzymes[10-12]. They are an effective way of penetrating the outer membrane of gram-negative bacteria or liposomes which makes them a solid basis for more complex destruction mechanisms. Incisions in cells from a DNAlien invasion will hopefully lead to lysis of bacteria.
+      </p>
+
+          <figure style="width:32vw; min-width: 280px;">
+        <p>
+          <img src="/dnaliens/images/theory/FixedvsLocked.png" style="width:28vw; min-width: 270px;" class="imgcenter">
+        </p>
+        <figcaption>
+          <b> Figure 1.15. Add figure comparing 4HB to 6HB.
+     </figcaption>
+      </figure>    
+      
+        <p>
+           Once demonstrating experimentally (link) that simple nanopores could insert into membranes and cause leakage of contents we needed to incorporate a pore into the DNAlien. We initially worked with Ohmann et. alls 4 Helix Bundle (4HB) pore but then designed our own 6 Helix Bundle (6HB hereafter) pores, which we incorporated into the DNAlien. 
+      </p>  
+      
+              
+        <p>
+           Once demonstrating experimentally (link) that simple nanopores could insert into membranes and cause leakage of contents we needed to incorporate a pore into the DNAlien. We initially worked with Ohmann et. alls 4 Helix Bundle (4HB) pore but then designed our own 6 Helix Bundle (6HB hereafter) pores, which we incorporated into the DNAlien. 
+      </p>  
+
+        <p>
+        MAKE IN BULLET POINTS @JOSEPH
+The pore must be no longer than 15nm. We want the pore to be short enough such that it remains in the barrel when in the closed lock state
+In the closed lock state, the pore is symmetric relative to the cable. This means that the cable enters and exits the pore from opposite helices in the hexagonal pore.
+Each helix must have multiple cross-overs to adjacent strands.
+At least 4 cholesterols must be on the pore and all must be outward facing. 
+Cholesterols must be within 4 bases of each other along the pore to enable insertion into lipid bilayer.
+Cholesterols must be positioned close to centre of the pore to ensure penetration through lipid bilayer.
+Each run of matched bases must be at least 7 base pairs long.
+Strands used to form the nanopore must be at least 15 base pairs long and at most 52 base pairs.
+
+      </p> 
+ 
+           <figure style="width:32vw; min-width: 280px;">
+        <p>
+          <img src="/dnaliens/images/theory/NanoShort.png" style="width:28vw; min-width: 270px;" class="imgcenter">
+        </p>
+        <figcaption>
+          <b> Figure 1.16. nanoSHORT pore design
+     </figcaption>
+      </figure>        
+      
+      <p>
+        While such a pore satisfies our design constraints. Under finite element analysis in Cando, the pore demonstrated instabilities. INSERT CANDO HERE
+      </p>
+      
+            <p>
+This lead us to extend the pore to our final Nanopore design, which is referred to simply as 6HB. 6HB is 44 nucleotides long (14.7nm) and contains 5 cholesterols. The down side of such a design of the cholesterols no longer being at the same height along the pore. However as the lipid membrane is 2.5-3.5nm wide, separations of 2nm should not pose an issue. Comparison between 6HB and the 4HB from [12] can be found here (link).
+      </p>
+      
+    <figure style="width:32vw; min-width: 280px;">
+        <p>
+          <img src="/dnaliens/images/theory/6HBFinal.png" style="width:28vw; min-width: 270px;" class="imgcenter">
+        </p>
+        <figcaption>
+          <b> Figure 1.16.  Final 6HB Pore design. 
+     </figcaption>
+      </figure>   
+      
+        <p>
+          Cando analysis of this pore shows that it displays greater stability, it can also be seen in oxDNA simulations. INSERT VIDEOS 
+        </p>
+      
+      <p>
+        The staples and short scaffold strands (italicised) with cholesterol modifications (underlined) for the 6HB are. 5’ and 3’ locations from the cadNANO design are given: INSERT TABLE
+      </p>
+      
       <h2>Methods</h2>
       <p>
-        
+        Exp team add your stuff here please
       </p>
 
-      <h2>Results</h2>
+      <h2>Future work</h2>
       <p>
-        
-      </p>
-
-      <h2>Discussion</h2>
-      <p>
-        
-      </p>
-
-      <h2>Conclusion</h2>
-      <p>
-        
-      </p>
-
+        Due to the broad scope of our project we had many ideas for ways that we could advance our design. 
+A particularly exciting area of future development is advancing the switching mechanism. Currently we have controlled the switching between states through adding strands but for our design to be fully realised in destruction of bacteria in the body we would either need to control this externally or by some automatic mechanism. 
+Using electromagnetic waves and / or electric and magnetic fields to control DNA origamis is an active area of research and is a feasible non-invasive method to activate origamis (s)
+Mechanisms could be attached to targeting molecules that upon binding emit light or initiate a strand displacement reaction. 
+Due to the complex nature of bacterial membranes developing a multifaceted destruction mechanism is required.
+One possible path is to focus on enlargement of punctures of membrane. Use a pore that has umbrella-like enlargement once entering the membrane has been envisaged.
+Additions to nanopore to target peptidoglycan layer of the bacterial membrane would provide further opportunities for advancement
+      </p>     
+            
       <h2>References</h2>
-      <p>
+      <p> 
+      [1] Douglas, S. M; Marblestone, A. H.; Teerapittayanon, S.; Vazquez, A.; Church, G.M.; Shih, W.M. Rapid prototyping of 3D DNA-origami shapes with caDNAno. Nucleic Acids Research 2009, 440, 297.
+[2] Zadeh, J. N.; Steenberg, C. D.; Bois, J. S.; Wolfe, B.R.; Pierce, M.B.; Khan, A. R.; Dirks, R.M.; Pierce, N.A. NUPACK: Analysis and design of nucleic acid systems. Journal of Computational Chemistry (2011), 32, 170.
+[3] Kim, D. N.; Kilchherr, F.; Dietz, H.; Bathe, M.; Quantitative prediction of 3D solution shape and flexibility of nucleic acid nanostructures. Nucleic Acids Research (2012), 40, 1.
+[4] Ouldridge, T.  DNA nanotechnology: understanding and optimisation through simulation. Molecular Physics (2015), 113, 1.
+[5] Rothemund, P. W. K. Folding DNA to create nanoscale shapes and patterns. Nature 2006, 440, 297.
+[6] Castro, C. E.; Kilchherr, F.; Kim, D. N.; Lin Shiao, E.; Wauer, T.; Wortmann, P.; Bathe, B.; Dietz, D. A Primer to scaffolded DNA Origami. Nature Methods  (2011), 8, 221
+[7] Zhang, D. Y.; Seelig, G.; Dynamic DNA nanotechnology using strand-displacement reactions. Nature Chemistry (2011) 3, 103
+[8] Andersen, E. S.; Dong, M; Nielsen, M. M.; Jahn, K.; Subramani, R.; Mamdouh, W.; Golas, M. M.; Sander, B.; Stark, H.; Oliveira, C. L. P.; Pedersen, J. K.; Birkedal, V.; Besenbacher, F.; Gothelf, K. V.; Kjems, J. Self-assembly of a nanoscale DNA box with a controllable lid, Nature (2009) 459, 73
+[9] Ponnuswamy, N.; Bastings, M. M. C.; Nathwani, B.; Ryu, J. H.; Chou, L. Y. T.; Vinther, W.; Li, W. A.; Anastassacos, F. M.; Mooney, D. J.; Shih, W. M.; Oligolysine-Based Coating Protects DNA Nanostructures from Low-Salt Denaturation and Nuclease Degradation. Nature Communications (2017) 8, 1.
+[10] Burns, J. R.;  Göpfrich, K.; Wood, J. W.;  Thacker, V. V; Stulz, E.;  Keyser, U. F.;  Howorka, S. Lipid‐Bilayer‐Spanning DNA Nanopores with a Bifunctional Porphyrin Anchor. Angew. Chem. Int. Ed. 2013,52 (46), 12069-12072.
+[11] Langecker, M.; Arnaut, V.; Martin, T. G.; List, J.; Renner, S.; Mayer, M.; Dietz, H.; Simmel, F. C. Synthetic lipid membrane channels formed by designed DNA nanostructures. Science (2013) 338 (6109), 932-936.
+[12] Ohmann, A.; Li, C.-Y.; Maffeo, C.; Al Nahas, K.; Baumann, K. N.; Göpfrich, K.; Yoo, J.; Keyser, U. F.; Aksimentiev, A. A synthetic enzyme built from DNA flips 107 lipids per second in biological membranes. Nat. Commun. 2018, 9 (1), 2426.
+
         
       </p>
 
