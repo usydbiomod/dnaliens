@@ -237,7 +237,7 @@ figure.video,sub,sup{position:relative}.heading-fade-out,
 							.grid .grid-item .grid-item-overlay 
 
 							/*this is the blue grid*/
-							.grid-item-overlay-inner{position:absolute;width:calc(100% + 20px);
+							.grid-item-overlay-inner{position:absolute;width:calc(100% + 0px);
 								height:calc(100% + 0px);z-index:3;border:0px solid #;
 								background-color:#000000;top:0px;left:0px;opacity:1;transition:top .15s ease,left .15s ease;transition-delay:.1s;color:#A8FF85;overflow:hidden;padding:30px}
 
