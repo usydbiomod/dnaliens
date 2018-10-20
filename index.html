@@ -1,14 +1,7 @@
-<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
 <!DOCTYPE html>
-<html lang="en-US">
-    <!--<![endif]-->
+<html lang="en" class="no-js no-touch">
 
-    <head>
-        <meta charset="utf-8">
-        <title>
-            DNAliens|Home
-        </title>
+<head>
         <!-- Behavioral Meta Data -->
         <meta content="yes" name="apple-mobile-web-app-capable">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"><!-- Core Meta Data -->
@@ -30,171 +23,220 @@
         <link rel="icon" 
         type="image/png" 
         href="/dnaliens/images/branding/favcon.png">
+    <!-- <link rel="stylesheet" href="/draft/stylePeople.css"> -->
+    <link rel="stylesheet" href="/dnaliens/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/dnaliens/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/dnaliens/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/dnaliens/css/contact.css">
 
-        <!--[if lt IE 9]>
-            <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-        
-        <!-- CSS -->
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'><!-- Styles -->
-        <link href="/dnaliens/css/loader.css" rel="stylesheet" type="text/css">
-        <link href="/dnaliens/css/normalize.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="/dnaliens/css/font-awesome.min.css">
-        <link href="/dnaliens/css/style.css" rel="stylesheet" type="text/css">
-        <!--[if lt IE 9]>
-            <link rel="stylesheet" type="text/css" href="/dnaliens/css/ie.css" />
-        <![endif]-->
-        <!-- Javascript -->
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement('picture');
+  </script>
+  <script src="/dnaliens/js/picturefill.min.js" async></script>
+<!--   <style type="text/css">
+    body{
+    background-image: url(/dnaliens/images/background/starb.png);
+    /*height: 380px;*/ /* You must set a specified height */
+    height: 100%; 
+    background-position: center; /* Center the image */
+    background-repeat: repeat; /* Do not repeat the image */
+    background-size: contain;
+    }
+  </style> -->
+</head>
+  
 
-        <script src="/dnaliens/js/jquery.js"></script>
 
+<body>
 
-    </head>
-    <body>
+<!-- Navbar Top -->
+<div>
+  <p>
+  <a class="imgcenter" href="https://usydbiomod.github.io/dnaliens/">
+    <img src="/dnaliens/images/branding/DNAliensWhite.png" alt="logo" style="width:35vw; min-width: 330px;" class="imgcenter"></a>
+  </p>
+</div>
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" style="font-family: 'Exo 2', sans-serif;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <img src="/dnaliens/images/branding/ufog.png" style="width: 10.0rem">
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html"> <u>Home</u></a>
+          </li>
 
-        <div class="preloader">
-            <div class="loading">
-                <h2>
-                    Loading...
-                </h2>
-                <span class="progress"></span>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="project.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Project Summary
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="project.html"ref="">Project Summary</a>
+                <a class="dropdown-item" href="project.html#Relevance">Relevance</a>
+                <ul>
+                  <a class="dropdown-item" href="project.html#b1"><li>Background</li></a>
+                  <a class="dropdown-item" href="project.html#b2"><li>The problem</li></a>
+                </ul>
+
+                <a class="dropdown-item" href="project.html#Merit">Merit</a>
+                <ul>
+                  <a class="dropdown-item" href="project.html#m1"><li>Our solution</li></a>
+                </ul>
+
+                <a class="dropdown-item" href="project.html#Specification">Specification</a>
+                <ul>
+                  <a class="dropdown-item" href="project.html#s1"><li>Project goals</li></a>
+                  <a class="dropdown-item" href="project.html#s2"><li>Criteria for success</li></a>
+                </ul>
+
+                <a class="dropdown-item" href="project.html#Feasibility">Feasibility</a> 
             </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="wiki.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Lab Wiki
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="wiki.html"ref="">Lab Wiki</a>
+                  <a class="dropdown-item" href="wiki.html#DNADesign">DNA Design</a>
+                  <a class="dropdown-item" href="wiki.html#Nanopore">Nanopore</a>
+<!--                     <ul>
+                      <a class="dropdown-item" href="wiki.html#o1"><li>Background</li></a>
+                      <a class="dropdown-item" href="wiki.html#o2"><li>Aims</li></a>
+                      <a class="dropdown-item" href="wiki.html#o3"><li>Methods</li></a>
+                      <a class="dropdown-item" href="wiki.html#o4"><li>Results</li></a>
+                      <a class="dropdown-item" href="wiki.html#o5"><li>Discussion</li></a>
+                      <a class="dropdown-item" href="wiki.html#o6"><li>Conclusion</li></a>
+                    </ul> -->
+                  <a class="dropdown-item" href="wiki.html#TA">Transport Assay</a>
+<!--                       <ul>
+                      <a class="dropdown-item" href="wiki.html#t1"><li>Background</li></a>
+                      <a class="dropdown-item" href="wiki.html#t2"><li>Aims</li></a>
+                      <a class="dropdown-item" href="wiki.html#t3"><li>Methods</li></a>
+                      <a class="dropdown-item" href="wiki.html#t4"><li>Results</li></a>
+                      <a class="dropdown-item" href="wiki.html#t5"><li>Discussion</li></a>
+                      <a class="dropdown-item" href="wiki.html#t6"><li>Conclusion</li></a>
+                    </ul> -->
+                  <a class="dropdown-item" href="wiki.html#TEM">TEM</a>
+<!--                       <ul>
+                      <a class="dropdown-item" href="wiki.html#m1"><li>Background</li></a>
+                      <a class="dropdown-item" href="wiki.html#m2"><li>Aims</li></a>
+                      <a class="dropdown-item" href="wiki.html#m3"><li>Methods</li></a>
+                      <a class="dropdown-item" href="wiki.html#m4"><li>Results</li></a>
+                      <a class="dropdown-item" href="wiki.html#m5"><li>Discussion</li></a>
+                      <a class="dropdown-item" href="wiki.html#m6"><li>Conclusion</li></a>
+                    </ul> -->
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sponsors.html">Sponsors</a>
+          </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Content -->
+
+<div class="content">
+
+    <div class="top">
+      <a href="project.html">
+        <div class="btn btn--white btn--animated">
+        <div class = "DNAUFO">
+        <img id="pic" src="/dnaliens/images/background/DNA_UFO.png" alt="DNAUFO">
         </div>
 
-        <div class="wrapper">
-            <ul class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" id="scene">
-                <li class="layer" data-depth="0.00">
-                </li>
-                <!-- BG -->
-
-                <li class="layer" data-depth="0.10">
-                    <div class="background">
-                    </div>
-                </li>
-
-                <!-- Hero -->
-                <li>
-                <div class="layer" data-depth="0.20" style="text-align: left;">
-                <h3 class="masthead-brand"><a class="site-title" href="https://usydbiomod.github.io/dnaliens/"><div><img src="/dnaliens/images/branding/DNAliensWhite.png" alt="logo" style="width:10rem;"></div></a></h3>
-                </div>
-                </li>
-
-                <li class="layer" data-depth="0.20">
-                    <div class="title">
-                        <h2>
-                            COMING SOON...
-                        </h2>
-                        <!-- <span class="line"></span> -->
-                    </div>
-                </li>
-
-                <li class="layer" data-depth="0.25">
-                    <div class="sphere">
-                        <img alt="sphere" src="images/sphere.png">
-                    </div>
-                </li>
-
-                <li class="layer" data-depth="0.30">
-                    <div class="hero">
-                        <h1 id="countdown">
-                         
-                        </h1>
-
-                        <br>
-                        <p class="sub-title">
-                            DNAliens are working very hard...
-                        </p>
-                        <br>
-                        <br>
-                        <p class="sub-title">
-                            Please follow us on Twitter and Facebook for updates!
-                        </p>
-                    </div>
-                </li>
-                <!-- Flakes -->
-
-                <li class="layer" data-depth="0.40">
-                    <div class="depth-1 flake1">
-                        <img alt="flake" src="images/flakes/depth1/flakes1.png">
-                    </div>
-
-                    <div class="depth-1 flake2">
-                        <img alt="flake" src="images/flakes/depth1/flakes2.png">
-                    </div>
-
-                    <div class="depth-1 flake3">
-                        <img alt="flake" src="images/flakes/depth1/flakes3.png">
-                    </div>
-
-                    <div class="depth-1 flake4">
-                        <img alt="flake" src="images/flakes/depth1/flakes4.png">
-                    </div>
-                </li>
-
-                <li class="layer" data-depth="0.50">
-                    <div class="depth-2 flake1">
-                        <img alt="flake" src="images/flakes/depth2/flakes1.png">
-                    </div>
-
-                    <div class="depth-2 flake2">
-                        <img alt="flake" src="images/flakes/depth2/flakes2.png">
-                    </div>
-                </li>
-
-                <li class="layer" data-depth="0.60">
-                    <div class="depth-3 flake1">
-                        <img alt="flake" src="images/flakes/depth3/flakes1.png">
-                    </div>
-
-                    <div class="depth-3 flake2">
-                        <img alt="flake" src="images/flakes/depth3/flakes2.png">
-                    </div>
-
-                    <div class="depth-3 flake3">
-                        <img alt="flake" src="images/flakes/depth3/flakes3.png">
-                    </div>
-
-                    <div class="depth-3 flake4">
-                        <img alt="flake" src="images/flakes/depth3/flakes4.png">
-                    </div>
-                </li>
-
-                <li class="layer" data-depth="0.80">
-                    <div class="depth-4">
-                        <img alt="flake" src="images/flakes/depth4/flakes.png">
-                    </div>
-                </li>
-
-                <li class="layer" data-depth="1.00">
-                    <div class="depth-5">
-                        <img alt="flake" src="images/flakes/depth5/flakes.png">
-                    </div>
-                </li>
-                <!-- Contact -->
-
-                <li class="layer" data-depth="0.20">
-                    <div class="contact">
-                        <ul class="icons">
-                            <li>
-                                <a class="twitter" href="https://twitter.com/usydbiomod?ref_src=twsrc%5Etfw" target="_blank"><i class="fa fa-twitter" style="color:#fff;"></i></a>
-                                <!-- The actual Twitter follow -->
-                                <!-- <a href="https://twitter.com/usydbiomod?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @usydbiomod</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-                            </li>
-
-                            <li>
-                                <a class="dribbble" href="https://www.facebook.com/USydBiomod/" target="_blank"><i class="fa fa-facebook" style="color:#fff;"></i></a>
-                            </li>
-                        </ul>
-                        <p id="copyright" style="font-size: 60%"> &#169 2018 USYDBIOMOD</p>
-                    </div>
-                </li>
-            </ul>
+        <div class = "bacterialPlanet">
+        <img id="pic" src="/dnaliens/images/background/bacteriaplanetcrop.png" alt="bacterialPlanet">
         </div>
+        </div>
+      </a>
+    </div>
 
 
-    <!-- Java -->
-    <script src="/dnaliens/js/plugins.js"></script> 
-    <script src="/dnaliens/js/jquery.countdown.min.js"></script> 
-    <script src="/dnaliens/js/main.js"></script>
-    </body>
+
+    <div class="text">
+        <p>
+        <a target="_blank" href="https://www.who.int/antimicrobial-resistance/en/" style="color: #A8FF85"><b>Antimicrobial resistance</b></a> is a growing global public health problem. Every year, 700 000 people die from drug resistant infections. Resistance is costly to healthcare, as traditional treatments become ineffective longer hospitalisations and more expensive drugs are required.
+        </p>
+        <p>
+        In our <a href="project.html" style="color: #A8FF85"><b>project</b></a>, we are designing a DNA nanobot, which we have named the DNAlien, that selectively destroys harmful microbes to combat resistance. Our project can be divided into two sections; targeting and destruction.
+        </p>
+        <p>
+        The targeting section involves using DNA aptamers which are structures that can selectively bind to a particular microbe. Destruction methods we are exploring include disrupting microbial membranes with DNA-origami lipid nanopores. We are hiding our  nanopore inside a DNA barrel, and will only be switched onto ‘destruction-mode’ when it binds to a specific microbe. This technology could offer an alternative to antimicrobials such as antibiotics, which have been implicated in the emergence of superbugs.
+        </p>
+    </div>
+
+
+<!--     <div class="btn btn--white btn--animated" >
+        <a href="project.html"><img src="/dnaliens/images/background/frame.png" style="width: 13vw"></a>
+    </div> -->
+
+  <div class="text">
+    <div class="videoWrapper">
+        <p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/GualpYe7lis" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-left: 7vw"></iframe>
+<!--         	<iframe width="560" height="315" src="https://www.youtube.com/embed/_q68Mtra_yU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-left: 7vw"></iframe> -->
+        	<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/lU-dIPMraVo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-left: 7vw"></iframe> -->
+        </p>
+    </div>
+  </div>
+
+<!--   <div class="text">
+    <div class="videoWrapper">
+        <p>
+          <iframe width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-left: 7vw"></iframe>
+        </p>
+    </div>
+  </div>
+ -->
+
+
+
+</div>
+
+<!-- Footer -->
+<div class="footerholder">
+<footer class="mastfoot mt-auto">
+        <!-- Contact -->
+<div class="contact">
+    <ul class="icons">
+        <li>
+            <a class="twitter" href="https://twitter.com/usydbiomod?ref_src=twsrc%5Etfw" target="_blank"><i class="fa fa-twitter" style="color:#fff;"></i></a>
+            <!-- The actual Twitter follow -->
+            <!-- <a href="https://twitter.com/usydbiomod?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @usydbiomod</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+        </li>
+
+        <li>
+        <a class="dribbble" href="https://www.facebook.com/USydBiomod/" target="_blank"><i class="fa fa-facebook" style="color:#fff;"></i></a>
+        </li>
+    </ul>
+    <div id="copyright" style="font-size: 90%"> &#169 2018 USYDBIOMOD</div>
+</div>
+
+
+</footer>
+</div>
+
+
+
+
+
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+</body>
 </html>
