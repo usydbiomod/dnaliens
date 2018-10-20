@@ -701,7 +701,7 @@ Additions to nanopore to target peptidoglycan layer of the bacterial membrane wo
       <h2 id="o1">Background</h2>
       <!-- Put your contents inside the tag -->
       <p>
-        The four-helix bundle (4HB) is a DNA nanostructure found to perturb biological membranes [1]. Eight strands of DNA fold to form a four-helix structure that inserts across lipid bilayers to form a toroidal pore (Figure 1). The 4HB features three variants differing the number of conjugated cholesterol moieties; 4HB.0C, 4HB.1C and 4HB.2C with respectively no cholesterol, 1 cholesterol and 2 cholesterols. 4HB.2C was the only variant to successfully function as two cholesterol tags are required to anchor the structure into the membrane via hydrophobic interactions on an otherwise hydrophilic DNA structure [1]. Since this membrane distribution is well characterised, it is the first candidate for our design. Our first steps were to reproduce this design, and optimise the yield and folding purity.  
+        The four-helix bundle (4HB) is a DNA nanostructure that has been shown  to perturb biological membranes [1]. Eight strands of DNA fold to form a four-helix structure that inserts across lipid bilayers to form a toroidal pore (Figure 2.1). The 4HB features three variants differing in the number of conjugated cholesterol moieties; 4HB.0C, 4HB.1C and 4HB.2C with respectively no cholesterol, 1 cholesterol and 2 cholesterols. In previously published work, 4HB.2C was the only variant to successfully function as a membrane pore. It was hypothesised that  this is because two cholesterol tags are  required to anchor the structure into the membrane via hydrophobic interactions on an otherwise hydrophilic DNA structure [1]. Since membrane disruption by the 4HB   is well characterised, it is the first candidate for our design. Our first steps were to reproduce this design, and optimise the yield and folding purity. 
       </p>
       
       <figure style="width:32vw; min-width: 280px;">
@@ -709,12 +709,12 @@ Additions to nanopore to target peptidoglycan layer of the bacterial membrane wo
           <img src="/dnaliens/images/wiki/DNA_pore/4HB.png" style="width:30vw; min-width: 270px;" class="imgcenter">
         </p>
         <figcaption>
-          <b>Figure 2.1.</b> A representation of the four helix bundle two cholesterol variant (4HB.2C), a functional DNA nanopore. DNA helices are represented as red cylinders while the hydrophobic cholesterol groups facilitating anchoring into lipid membranes is represented as white ovals. This models the design created by Ohmann <em>et al.</em>, 2018 [1]. 
+          <b>Figure 2.1.</b> A representation of the four helix bundle two cholesterol variant (4HB.2C), a functional DNA nanopore (a: side view and b: top view). DNA helices are represented as red cylinders while the hydrophobic cholesterol groups facilitating anchoring into lipid membranes is represented as white ovals. This model is of  the design created by Ohmann et al., 2018 [1].
         </figcaption>
       </figure>        
 
       <p>
-        Larger DNA nanopores have also been reported in literature, featuring six DNA helices where ionic current measurements confirm transmembrane insertion [2]. The six-helix bundle (6HB) was designed because the larger pore was hypothesised to achieve greater bacterial destruction as a larger pore diameter can allow for greater leakage of cellular components (Figure 2). The 6HB design is based off an existing six-helical pore with two porphyrin tags [2]. However instead of the porphyrin tags, five cholesterol molecules are used as a substitute because cholesterol modified DNA strands are commercially available. The 6HB consists of 12 DNA that fold together and details about the design can be found here. 
+        Larger DNA nanopores, featuring six DNA helices, have also been reported in literature. Ionic current measurements have been used to confirm transmembrane insertion of this structure [2]. We designed a new variant of  the six-helix bundle (6HB) because the larger pore is expected  to lead to  greater leakage of cellular components. We hypothesise that greater leakage will achieve greater bacterial destruction (Figure 2.2). The 6HB design we used is based on an existing six-helical DNA nanostructure [3], which has a different scaffold and staple routing to the 6HB used in [2]. The 6HB used in previous membrane studies has two porphyrin tags [2]  Instead of the porphyrin tags, we used five cholesterol molecules, because cholesterol modified DNA strands are commercially available. Our 6HB consists of 12 DNA strands that fold together, details about the design can be found here.
       </p>
 
        <figure style="width:32vw; min-width: 280px;">
@@ -722,26 +722,28 @@ Additions to nanopore to target peptidoglycan layer of the bacterial membrane wo
           <img src="/dnaliens/images/wiki/DNA_pore/6HB.png" style="width:30vw; min-width: 270px;" class="imgcenter">
         </p>
         <figcaption>
-          <b>Figure 2.1.</b> A representation of the six helix bundle nanopore decorated with five cholesterol tags. 
+          <b>Figure 2.2.</b> A representation of the six helix bundle nanopore decorated with five cholesterol tags (a: side view, b: top view).
         </figcaption>
       </figure>  
 
       <h2 id="o2">Aims</h2>
       <!-- Put your contents inside the tag -->
       <p>
-        To optimise the folding of 4HB.2C by considering DNA concentration, folding time and concentration of MgCl<sub>2</sub> folding buffer. <br>To show 6HB design can fold correctly into a nanopore.
+        To optimise the folding of existing 4HB.2C design by considering DNA concentration, folding time and concentration of MgCl<sub>2</sub> folding buffer.  
+        <br>
+        To show the new 6HB design can fold correctly into a nanopore.
       </p>
 
       <h2 id="o3">Methods</h2>
       <!-- Put your contents inside the tag -->
       <h3>General Protocol for 4HB.0C</h3>
       <p>
-        The reported protocol involved the folding of all DNA strands (0.1 µM for each strand, strands 1-8) in MgCl<sub>2</sub> (20 mM) for 18 h in a PCR machine (heating to 80° for 5 min, cooling down to 65° using a linear cooling ramp over 75 min, subsequently cooling to 25° within 16 h). BlueJuice loading buffer (Life Tech) was added to folded samples, with the solution then loaded onto a native PAGE (10% acrylamide, 11 mM MgCl<sub>2</sub>, 0.5 x TBE, 0.1% APS, 0.1% TEMED) for 60-90 min at 100 V in tris-borate-EDTA buffer (11 mM MgCl<sub>2</sub>). The gel was stained with SyBr Gold and imaged using a ChemiDoc<sup>TM</sup> gel imaging system. This general protocol was varied to identify the optimal conditions of folding. 
+        The reported protocol involved the folding of all DNA strands (0.1 µM for each strand, strands 1-8) in MgCl<sub>2</sub> (20 mM) for 18 h in a PCR machine (heating to 80° for 5 min, cooling down to 65° using a linear cooling ramp over 75 min, subsequently cooling to 25° within 16 h). BlueJuice loading buffer (Life Tech) was added to folded samples, and the solution loaded onto a native PAGE (10% acrylamide, 11 mM MgCl<sub>2</sub>, 0.5 x TBE, 0.1% APS, 0.1% TEMED) for 60-90 min at 100 V in tris-borate-EDTA buffer (11 mM MgCl<sub>2</sub>). The gel was stained with SyBr Gold and imaged using a ChemiDocTM gel imaging system. This general protocol was varied to identify the optimal conditions of folding.
       </p>
 
       <u>Stepwise folding of 4HB.0C </u>
       <p>
-        To verify the successful folding of the structure, a stepwise protocol was performed. The general protocol was varied whereby folding was performed with only strand 1 (0.1 µM), only strands 1-2 (0.1 µM), only strands 1 -3 (0.1 µM) … adding one additional strand until all 8 strands were used. 
+        To verify the successful folding of the structure, a stepwise protocol was performed. The general protocol was varied whereby folding was performed with only strand 1 (0.1 µM) and repeated for strands 1-2 (0.1 µM), strands 1 -3 (0.1 µM), strands 1 - 4 (0.1 µM), strands 1 - 5 (0.1 µM), strands 1 - 6 (0.1 µM), strands 1 - 7 (0.1 µM) and finally all 8 strands (0.1 µM). 
       </p>
 
       <u>Comparison of 4HB.0C, 1C, 2C</u>
@@ -752,7 +754,7 @@ Additions to nanopore to target peptidoglycan layer of the bacterial membrane wo
       <h3>Optimisation of DNA concentration</h3>
       <u>Total DNA concentration</u>
       <p>
-        The general protocol was followed for all three variants of 4HB, except final folding concentration of DNA strands were varied; 0.1 µM, 1 µM and 10 µM.  After folding was complete, 1 µM was diluted 1/10 and 10 µM was diluted 1/100 prior to loading. This normalisation is required to give a representation of % yield; accounting for the different starting amounts of DNA. 
+        The general protocol was followed for all three variants of 4HB, except final folding concentration of DNA strands were varied; 0.1 µM, 1 µM and 10 µM. After folding was complete, 1 µM was diluted 1/10 and 10 µM was diluted 1/100 prior to loading. This normalisation is required to give a representation of % yield; accounting for the different starting amounts of DNA.
       </p>
 
       <u>Strand Ratio</u>
@@ -760,22 +762,22 @@ Additions to nanopore to target peptidoglycan layer of the bacterial membrane wo
         The general protocol was followed for 4HB.2C, except the concentration of all strands without cholesterol were increased to 0.5 µM.
       </p>
       <p>
-        The general protocol was followed for 4HB.2C, except the concentration of all strands with cholesterol were increased to 0.5 µM. 
+        The general protocol was followed for 4HB.2C, except the concentration of all strands with cholesterol were increased to 0.5 µM.
       </p>
 
       <h3>Optimisation of folding time </h3>
       <p>
-        The general protocol was followed for 4HB.0C, except the folding time was varied; 10 min, 1 h, 2 h and 18 h. Samples were normalised to 0.2 µM prior to loading. 
+        The general protocol was followed for 4HB.0C, except the folding time was varied; 10 min, 1 h, 2 h and 18 h. Samples were normalised to 0.2 µM prior to loading.
       </p>
 
       <h3>Optimisation of Mg<sup>2+</sup> folding buffer</h3>
       <p>
-        The general protocol was followed for 4HB.0C, except the folding time (was changed to 2 h) and the final folding MgCl<sub>2</sub> concentration was varied; 5 mM, 10 mM, 20 mM, 30 mM. Samples were nomralised to 0.1 µM DNA prior to loading. 
+        The general protocol was followed for 4HB.0C, except the folding time (was changed to 2 h) and the final folding MgCl<sub>2</sub> concentration was varied; 5 mM, 10 mM, 20 mM, 30 mM. Samples were normalised to 0.1 µM DNA prior to loading.
       </p>
 
       <h3>General Protocol for 6HB</h3>
       <p>
-        Equimolar concentrations of the 12 DNA strands (0.1 µM) were folded in MgCl<sub>2</sub> (12 mM and 20 mM) for 18 h in a PCR machine (heating to X and cycling between 50° and 40° over X min). BlueJuice loading buffer (Life Tech) was added to folded samples, with the solution then loaded onto a native PAGE (8% acrylamide, 11 mM MgCl<sub>2</sub>, 1 x TBE, 0.1% APS, 0.1% TEMED) for 2 h at 100 V in tris-borate-EDTA buffer (11 mM MgCl<sub>2</sub>). The gel was stained with SyBr Gold and imaged using a ChemiDocTM gel imaging system. 
+        Equimolar concentrations of the 12 DNA strands (0.1 µM) were folded in MgCl<sub>2</sub> (12 mM and 20 mM) for 18 h in a PCR machine (heating to 65C for 15 min and then decreasing  from  50°C to 40°C over 18 h). BlueJuice loading buffer (Life Tech) was added to folded samples, with the solution then loaded onto a native PAGE (8% acrylamide, 11 mM MgCl<sub>2</sub>, 1 x TBE, 0.1% APS, 0.1% TEMED) for 2 h at 100 V in tris-borate-EDTA buffer (11 mM MgCl<sub>2</sub>). The gel was stained with SyBr Gold and imaged using a ChemiDocTM gel imaging system.
       </p>
       <u>Stepwise folding of 6HB</u>
       <p>
@@ -789,7 +791,7 @@ Additions to nanopore to target peptidoglycan layer of the bacterial membrane wo
       <h3>Proof of successful folding</h3>
       <u>Stepwise folding of 4HB.0C</u>
       <p>
-        The loose strands quickly move to the bottom of the gel (Figure 2.3). An additional band of higher molecular weight was not observed until the folding of strands 1-6, indicating a structure has folded. The structure formed by strands 1-7 has an increased weight as does the structure formed by strands 1 -8 which is expected by the incorporation of more DNA to the folded structure (Figure 2.3). 
+        The loose strands quickly move to the bottom of the gel (Figure 2.3). A band of higher molecular weight was observed on the addition of strands 1-6, indicating a structure has folded. The structure formed by strands 1-7 has an increased weight as does the structure formed by strands 1-8,  as expected by the incorporation of more DNA to the folded structure (Figure 2.3).
       </p>
 
       <figure style="width:32vw; min-width: 280px;">
@@ -797,7 +799,7 @@ Additions to nanopore to target peptidoglycan layer of the bacterial membrane wo
           <img src="/dnaliens/images/wiki/DNA_pore/Figure2.png" style="width:28vw; min-width: 270px;" class="imgcenter">
         </p>
         <figcaption>
-          <b>Figure 2.3. Stepwise folding of 4HB 0C.</b> 10% PAGE (11 mM MgCl<sub>2</sub>) run for 90 min at 100 V. Lane 1: 25 bp ladder, Lane 2: Strand 1, Lane 3: Strand 1 – 2, Lane 4: Strand 1 – 3, Lane 5: Strand 1 – 4, Lane 6: Strand 1 – 5, Lane 7: Strand 1 – 6, Lane 8: Strand 1 – 7, Lane 9: Strand 1 – 8.  
+          <b>Figure 2.3.</b> Stepwise folding of 4HB 0C. 10% PAGE (11 mM MgCl2) run for 90 min at 100 V. Lane 1: 25 bp ladder, Lane 2: Strand 1, Lane 3: Strand 1 – 2, Lane 4: Strand 1 – 3, Lane 5: Strand 1 – 4, Lane 6: Strand 1 – 5, Lane 7: Strand 1 – 6, Lane 8: Strand 1 – 7, Lane 9: Strand 1 – 8.
         </figcaption>
       </figure>
 
@@ -812,7 +814,7 @@ Additions to nanopore to target peptidoglycan layer of the bacterial membrane wo
           <img src="/dnaliens/images/wiki/DNA_pore/Figure3.png" style="width:15vw; min-width: 270px;" class="imgcenter">
         </p>
         <figcaption>
-          <b>Figure 2.4. Comparison of 4HB.0C, 4HB.1C, 4HB.2C.</b> 8% PAGE (11 mM MgCl<sub>2</sub>) run for 2 h at 100 V. Structures were folded at 10 uM concentration of DNA strands and loaded sample normalised to 0.1 uM. Lane 1: 4HB.0C, Lane 2: 4HB.1C, Lane 3: 4HB.2C, Lane 4: 25 bp ladder. 
+          <b>Figure 2.4. Comparison of 4HB.0C, 4HB.1C, 4HB.2C.</b> 8% PAGE (11 mM MgCl2) run for 2 h at 100 V. Structures were folded at 10 uM concentration of DNA strands and loaded sample normalised to 0.1 uM. Lane 1: 4HB.0C, Lane 2: 4HB.1C, Lane 3: 4HB.2C, Lane 4: 25 bp ladder.
         </figcaption>
       </figure>
 
@@ -820,7 +822,7 @@ Additions to nanopore to target peptidoglycan layer of the bacterial membrane wo
       <h3>Optimisation of DNA concentration</h3>
       <u>Total DNA concentration</u>
       <p>
-        The optimum folding concentration was determined to be 10 uM for all three 4HB variants; 0C, 1C and 2C. This is since the 10 uM folding condition lead to a much brighter band compared to the 0.1 and 1 uM conditions after normalisation of loading concentration. 
+        The optimum folding concentration was determined to be 10 uM for all three 4HB variants; 0C, 1C and 2C. The 10 uM folding condition lead to a more intense  band, indicating a higher folding yield,  compared to the 0.1 and 1 uM conditions after normalisation of loading concentration.
       </p>
 
 
@@ -836,7 +838,7 @@ Additions to nanopore to target peptidoglycan layer of the bacterial membrane wo
 
       <u>Strand Ratio</u>
       <p>
-      	Altering the strand ratio did not significantly increase the yield of 4HB.2C whereby bands were of relatively similar brightness (Figure 2.6). Furthermore, both excess cholesterol strands and excess non-cholesterol strands lead to increased smearing observable in the gel. Consequently, equimolar amounts of each DNA strand was determined to be the optimum condition. 
+      	Altering the strand ratio did not significantly increase the yield of 4HB.2C whereby bands were of relatively similar brightness (Figure 2.6). Furthermore, both excess cholesterol strands and excess non-cholesterol strands lead to increased smearing observable in the gel. This smearing can indicate the presence of incorrectly folded nanostructures in the sample.Consequently, equimolar amounts of each DNA strand were chosen for subsequent experiments.
       </p>
 
       <figure style="width:32vw; min-width: 280px;">
@@ -844,14 +846,14 @@ Additions to nanopore to target peptidoglycan layer of the bacterial membrane wo
           <img src="/dnaliens/images/wiki/DNA_pore/Figure5.png" style="width:15vw; min-width: 270px;" class="imgcenter">
         </p>
         <figcaption>
-          <b>Figure 2.6. Altering strand ratio in 4HB.2C folding.</b> 8% PAGE (11 mM MgCl<sub>2</sub>) run for 90 min at 100 V.    4HB.2C was folded according to its general protocol, except some strands were added in excess. Lane 1: Normal strand ratio, Lane 2: 5x Excess non-cholesterol (strands 1, 3, 5-8), Lane 3: 5x Excess cholesterol (strands 2, 4), Lane 4: cholesterol strand 4, Lane 5: 25 bp ladder.
+          <b>Figure 2.6. Altering strand ratio in 4HB.2C folding.</b> 8% PAGE (11 mM MgCl<sub>2</sub>) run for 90 min at 100 V. 4HB.2C was folded according to its general protocol, except some strands were added in excess. Lane 1: Normal strand ratio, Lane 2: 5x Excess non-cholesterol (strands 1, 3, 5-8), Lane 3: 5x Excess cholesterol (strands 2, 4), Lane 4: cholesterol strand 4, Lane 5: 25 bp ladder.
         </figcaption>
       </figure>
    
 
       <h3>Optimisation of folding time</h3>
       <p>
-        18 hr and 2 hr folding times gave bands of similar intensity and sharpness (Figure 2.7). Shorter folding times led to blurrier bands and a greater degree of smearing on the gel indicating aggregates. Leaving the DNA strands at room temperature without any PCR folding protocol gave a very poor yield of 4HB. Therefore, 2 hr was chosen as the optimum folding time as it gave similar results to 18 hr while also being a far more practical option. 
+        18 h and 2 h folding times gave bands of similar intensity and sharpness (Figure 2.7). Shorter folding times led to less sharpbands and a greater degree of smearing on the gel indicating aggregates and misfolded structures. Leaving the DNA strands at room temperature without any PCR folding protocol gave a very poor yield of 4HB. 2 h was chosen as the folding time for subsequent experiments for convenience. 
       </p>
 
       <figure style="width:45vw; min-width: 280px;">
@@ -859,7 +861,7 @@ Additions to nanopore to target peptidoglycan layer of the bacterial membrane wo
           <img src="/dnaliens/images/wiki/DNA_pore/Figure6.png" style="width:30vw; min-width: 270px;" class="imgcenter">
         </p>
         <figcaption>
-          <b>Figure 2.7. Comparison of 4HB.0C folding time.</b> 8% PAGE (11 mM MgCl<sub>2</sub>) run for 2 h at 100 V. Samples were normalised to 0.2 µM prior to loading.  Lane 1: 25 bp ladder, Lane 2: 0.2 µM Strand 4, Lane 3: 18 hr, Lane 4: 2 hr, Lane 5: 1 hr, Lane 6: 10 min, Lane 7: left at room temperature without folding, Lane 8: 0.2 µM Strand 4, Lane 9: 25 bp ladder. 
+          <b>Figure 2.7. Comparison of 4HB.0C folding time.</b> 8% PAGE (11 mM MgCl<sub>2</sub>) run for 2 h at 100 V. Samples were normalised to 0.2 µM prior to loading. Lane 1: 25 bp ladder, Lane 2: 0.2 µM Strand 4, Lane 3: 18 h, Lane 4: 2 h, Lane 5: 1 h, Lane 6: 10 min, Lane 7: left at room temperature without folding, Lane 8: 0.2 µM Strand 4, Lane 9: 25 bp ladder. 
         </figcaption>
       </figure>
 
@@ -917,7 +919,10 @@ Additions to nanopore to target peptidoglycan layer of the bacterial membrane wo
       <!-- Put your contents inside the tag -->
       <p>
         [1] Ohmann, A.; Li, C.-Y.; Maffeo, C.; Al Nahas, K.; Baumann, K. N.; Göpfrich, K.; Yoo, J.; Keyser, U. F.; Aksimentiev, A. A synthetic enzyme built from DNA flips 107 lipids per second in biological membranes. <em>Nat. Commun.</em> <b>2018</b>, <em>9</em> (1), 2426. 
-        <br> [2] Burns, J. R.; Göpfrich, K.; Wood, J. W.; Thacker, V. V.; Stulz, E.; Keyser, U. F.; Howorka, S. Lipid-Bilayer-Spanning DNA Nanopores with a Bifunctional Porphyrin Anchor. <em>Angew. Chem. Int. Ed.</em> <b>2013,</b> <em>52</em> (46), 12069-12072.
+        <br>
+        [2] Burns, J. R.; Göpfrich, K.; Wood, J. W.; Thacker, V. V.; Stulz, E.; Keyser, U. F.; Howorka, S. Lipid-Bilayer-Spanning DNA Nanopores with a Bifunctional Porphyrin Anchor. <em>Angew. Chem. Int. Ed.</em> <b>2013,</b> <em>52</em> (46), 12069-12072.
+        <br>
+        [3] Douglas, S. M.; Chou, J. J.; Shih, W. M. DNA-nanotube-induced alignment of membrane proteins for NMR structure determination. <em>PNAS</em> <b>2007</b>, <em>104</em>, 6644–6648.
       </p>
 
       <h2>Raw Data</h2>
