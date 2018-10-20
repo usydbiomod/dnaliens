@@ -216,3 +216,28 @@ padding: 0.2rem 0;
 .dropdown:hover .dropdown-menu ul{
    list-style: none;
 }
+
+div .videoWrapper2 {
+  max-width: 30vw;
+  min-width: 230px;
+  position: relative;
+  padding-bottom: 25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapper2 {
+  max-width: 30vw;
+  min-width: 230px;
+  position: relative;
+  padding-bottom: 25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper2 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
